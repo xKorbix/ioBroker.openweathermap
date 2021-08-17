@@ -1,10 +1,13 @@
 {
     "common": {
         "name":                     "openweathermap",
-        "version": "0.1.0",
+        "version": "0.1.1",
 		"news": {
             "0.1.0": {
                 "en": "initial commit"
+            },
+            "0.1.1": {
+                "en": "debug"
             }
         },
         "title":                    "openweathermap.org",
