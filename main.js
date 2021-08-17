@@ -178,9 +178,7 @@ function calculateAverage(sum, day) {
     for (const attr in counts) {
         if (!counts.hasOwnProperty(attr)) continue;
         if (counts[attr]) {
-	    adapter.log.info(attr + ': ' + (result[attr] / counts[attr]));
-            result[attr] = Math.round(result[attr] / counts[attr]);
-	    adapter.log.info(attr + ': ' + result[attr]);
+            result[attr] = Math.round((result[attr] / counts[attr])*100)/100;
         } else {
             result[attr] = null;
         }
